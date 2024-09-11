@@ -1,0 +1,26 @@
+HTML:
+-un div con clase container para centrar el contenido o algo así
+	-un div clase row, para contener todo el html que vamos a usar
+		-un main para contener todos nuestros productos a escoger, ACÁ se van a generar en div's los productos
+		-un aside para contener el carrito que tendrá los elementos seleccionados
+			-h2 para el titulo de carrito
+			-ul para cada uno de los elementos que van a aparecer
+			-<p> para decir la suma total costo y el simbolo de dolar
+				-span, para indicar la suma de los items precio, inicialmente 0.00
+			-button, para vaciar el contenido del carrito
+
+JAVASCRIPT
+-Variable Constante ${base de datos} que a modo de base de datos, almacenará en un arreglo los objetos con los valores cada producto(id, nombre, precio e imagen asociada que se mostrará)
+-Declaracion de variable y 5 constantes
+	-${carrito[]}, para ahí llenarle los productos seleccionados	
+	-constante ${divisa}, para simplemente usarlo para indicar si es en soles, dolares o euros
+	-constante DOMitems, para usarlo para agregar nuevos elementos html encima del ultimo elemento que tiene la etiqueta main que dijimos que contendrá todos nuestros productos un una carta cada uno
+	-constante DOMcarrito, para seleccionar nuestra lista <ul> que nos mostrará todos los elementnos escogidos, vamos a usarlo para ingresar items a la lista con appendchild
+	-constante DOMtotal, que selecciona el <span> que mostrará el precio total de todo lo que escogimos, lo usaremos para que tenga el valor de una funcion para calcular el precio total
+	-constante DOMbotonVaciar, selecciona el botón "Vaciar", y le se usará para ejecutar una funcion que asignará un arreglo vacío al carrito.
+-Functiones
+	-function renderizarProductos(), dibuja el diseño de la carta de cada producto
+		-dibuja un div que va almacenar
+		-creamos el body de la carta
+		-ponemos un <h5> que tenga el nombre del producto
+		-ponemos una imagen 

@@ -1,0 +1,46 @@
+﻿-Hacer insert con ajax ♠
+-Hacer como que una interfaz de carrito de compra para seleccionar productos(Hacer un buscador con las categorías)
+según eso buscar y ir añadiendo al carrito de compra para realizar una compra
+	Luego de la compra dar dos opciones volver (parar editar compra) y botar un boucher o algo así
+-Talvez a cada producto agregarle detalle en un link para ver datos extras
+-Poner como que subtitulos para indicar las categorias y así
+-Anotar info de lo que hace el carrito duplicado
+-Fuente: https://mascotify.pe/perros/alimento/alimento-seco/
+Tomar en cuenta: imagenes 150 x 150 o un poco (+), 3 de cada categoría
+	alimentos humedos
+		Ricocan Paté Cordero x 330gr | 5.5♠
+		Ricocan Trocitos en Salsa de Cordero | 2.5♠
+		Ricocan Paté Pollo x 330gr | 5.5♠
+	alimentos secos
+		Canbo Adultos de razas medianas y grandes | 56♠
+		Canbo Cachorros de razas pequeñas | 23♠
+		Canbo Adultos de razas pequeñas | 56♠
+	juguetes
+		Zeedog Pelota Súper Orange | 39♠
+		GIGwi Ball - Pelota para perros | 19.9♠
+		Zeedog Pelota Rob el Microbio | 39♠
+	ropa
+		Gentledog - Cuello y corbata para perros | 37♠
+		Perruanísima - Bandana para perros | 32♠
+		Brandon - Corbata michi para perros | 37♠
+	shampoo
+		Hartz Shampoo para cachorros | 37♠
+		Hartz Shampoo 3 en 1 para perros | 37♠
+		Hartz Shampoo aclarante para perros | 37♠
+	medicina?
+		Bravecto 500mg Antipulgas perros 10 a 20kg | 115♠
+		Bravecto 1000mg Antipulgas perros 20 a 40kg | 149♠
+		Bravecto 112.5mg Antipulgas perros 2 a 4.5kg | 106♠
+-Anotar todo lo que hicimos para explicarlo
+	Los sliders con el javascript de Bootstrap
+		Cada uno tiene para manipular el slider <|>
+	Formulario
+		Validación de cada campo
+		Registros nuevo en la base de datos
+		Se muestra mensaje de exito
+		El formulario se limpia despues del envío
+	Carrito compras
+		Objetos que se generan
+		Objetos seleccionados almacenados en la lista del carrito
+		Botón Vaciar
+		Botón Comprar(imprimir)

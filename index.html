@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Estilo personalizado para ajustar el tamaño del carrusel */
+      .small-carousel .carousel-inner img {
+          width: 270px;
+          height: 400px;
+          object-fit: cover;
+          margin: auto;
+      }
+      .small-carousel {
+          width: 270px;
+          margin: auto;
+      }
+      /* Estilo personalizado para el mapa */
+      .map-container {
+            width: 100%;
+            height: 400px; /* Ajusta la altura del mapa como desees */
+            margin: 0;
+            padding: 0;
+        }
+      /* Estilo personalizado para el footer */
+      .footer {
+            background-color: #343a40; /* Fondo de color oscuro */
+            color: #ffffff; /* Texto blanco */
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #ffffff; /* Mantener los enlaces en blanco */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+  </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/vet.png" alt="Logo de la empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="text-primary h1">Puppy</span><span class="text-danger h1">Pets</span>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/slider_perro1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Para la diversión de ellos...</h5>
+            <p>Porque acá amamos a nuestros pequeños de la casa</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/slider_perro2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>El descanso de ellos</h5>
+            <p>Es importante consentir a nuestros queridos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/slider_perro3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ellos son aventureros</h5>
+            <p>Sentir la emoción de la aventura</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h2 class="col align-self-center bg-info text-center">Puppy Pets, Tienda Online De Comida, Farmacia, Accesorios Y Ropa Para Mascotas.</h2>
+    </div>
+    <div class="row">
+      <h2 class="col align-self-center bg-info text-center">Encuentre De Todo Para Su Perro!</h2>
+    </div>
+    <div class="row">
+      <h2 class="col align-self-center bg-info text-center">Productos en Oferta!</h2>
+    </div>
+</div>
+
+<div class="container mt-5">
+  <!-- Carrusel de productos -->
+  <div id="productCarousel" class="carousel slide small-carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#productCarousel" data-slide-to="1"></li>
+          <li data-target="#productCarousel" data-slide-to="2"></li>
+          <li data-target="#productCarousel" data-slide-to="3"></li>
+          <li data-target="#productCarousel" data-slide-to="4"></li>
+          <li data-target="#productCarousel" data-slide-to="5"></li>
+          <li data-target="#productCarousel" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="assets/images/slider_producto1.jpg" alt="Producto 1">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Ropa para perros</h5>
+                  <p>Ropa de calidad para todas las edades</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/images/slider_producto2.jpg" alt="Producto 2">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Comida Seca</h5>
+                  <p>Comida seca de diferentes marcas</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/images/slider_producto3.jpg" alt="Producto 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Juguetes</h5>
+                  <p>Juguetes dedicados para los animales</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/images/slider_producto4.jpg" alt="Producto 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Comida Húmeda</h5>
+                  <p>Alimentos húmedos para los perrhijos</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/images/slider_producto5.jpg" alt="Producto 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Shampoos para perros</h5>
+                  <p>Para el cuidado personal</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/images/slider_producto6.jpg" alt="Producto 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Camas</h5>
+                  <p>Camas cómodas para ellos</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="assets/images/slider_producto7.jpg" alt="Producto 3">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Carne Seca</h5>
+                  <p>Carne seca de diferentes marcas</p>
+              </div>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+      </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <h2 class="col align-self-center bg-info text-center">Nuestros Servicios</h2>
+  </div>  
+</div>
+<div class="container">
+  <div class="d-inline p-5">
+    <img src="assets/images/inicio_perro1.jpg" alt="">
+  </div>
+  <div class="d-inline p-3">
+    <img src="assets/images/inicio_perro2.jpg" alt="">
+  </div>
+<div class="d-inline p-3">
+    <img src="assets/images/inicio_perro3.jpg" alt="">
+  </div>
+  <div class="d-inline p-5">
+    <img src="assets/images/inicio_perro4.jpg" alt="">
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <h2 class="col align-self-center bg-info text-center">Ubícanos</h2>
+  </div>  
+</div>
+<!-- Mapa de Google Maps -->
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.5843657591687!2d-71.52949779671165!3d-16.407593334190597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424afeebd320b5%3A0x408f3661cff7b03c!2sInstituto%20Jobs%20Capacity!5e0!3m2!1ses-419!2spe!4v1720745303061!5m2!1ses-419!2spe" 
+    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer class="footer mt-5">
+  <div class="container">
+      <div class="row">
+          <!-- Sección Compañía -->
+          <div class="col-md-3">
+              <h5>Compañía</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Acerca de Nosotros</a></li>
+                  <li><a href="#">Carreras</a></li>
+                  <li><a href="#">Prensa</a></li>
+                  <li><a href="#">Contactos</a></li>
+              </ul>
+          </div>
+          <!-- Sección Servicios -->
+          <div class="col-md-3">
+              <h5>Servicios</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Consultoría</a></li>
+                  <li><a href="#">Desarrollo Web</a></li>
+                  <li><a href="#">Marketing</a></li>
+                  <li><a href="#">Soporte Técnico</a></li>
+              </ul>
+          </div>
+          <!-- Sección Tienda -->
+          <div class="col-md-3">
+              <h5>Tienda</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Productos</a></li>
+                  <li><a href="#">Ofertas</a></li>
+                  <li><a href="#">Nuevas Llegadas</a></li>
+                  <li><a href="#">Promociones</a></li>
+              </ul>
+          </div>
+          <!-- Sección Síguenos -->
+          <div class="col-md-3">
+              <h5>Síguenos</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+              </ul>
+          </div>
+      </div>
+      <!-- Sección de Derechos Reservados -->
+      <div class="row mt-4">
+          <div class="col-md-12 text-center">
+              <p class="mb-0">&copy; 2024 Puppy Pets. Todos los derechos reservados.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
